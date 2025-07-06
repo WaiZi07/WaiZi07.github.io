@@ -216,7 +216,19 @@
     </footer>
 
     <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropBtn = document.querySelector(".dropbtn");
+            const dropContent = document.querySelector(".dropdown-content");
+
+            dropBtn.addEventListener("click", function (e) {
+                dropContent.classList.toggle("show");
+                e.stopPropagation();
+            });
+
+            document.addEventListener("click", function () {
+                dropContent.classList.remove("show");
+            });
+        });
     </script>
 
 </body>

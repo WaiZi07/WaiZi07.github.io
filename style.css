@@ -76,12 +76,13 @@ a:hover {
     border-radius: 8px;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-content.show {
     display: block;
 }
 
 .image {
     width: 100%;
+    max-width: 100%;
 }
 
 @media (max-width: 600px) {
