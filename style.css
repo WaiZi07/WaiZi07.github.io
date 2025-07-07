@@ -82,12 +82,23 @@ a:hover {
 
 .image {
     width: 100%;
-    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 @media (max-width: 600px) {
     .image_2 {
         width: 275px;
+    }
+
+    .image {
+        max-height: 200px;
+    }
+}
+
+@media (min-width: 600px) {
+    .image {
+        max-height: 300px;
     }
 }
 
@@ -124,6 +135,10 @@ a:hover {
 
     .dropbtn {
         font-size: 35px;
+    }
+
+    .image {
+        max-height: 400px;
     }
 }
 

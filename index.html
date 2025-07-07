@@ -34,13 +34,11 @@
         <div class="visit_left">
             <h2>Mon parcours</h2>
             <p>
-                Je m'appelle Luc, récemment diplômé en tant qu’ingénieur en automation et systèmes embarqués.
-                Passionné par ces domaines, je suis actuellement à la recherche d’un poste qui me permettra de mettre en
-                pratique et d’approfondir les compétences acquises au cours de mes cinq années d’études.
-                Motivé, curieux et rigoureux, je suis prêt à relever de nouveaux défis et à contribuer activement à des
-                projets innovants.
+                Je m'appelle Luc, récemment diplômé en tant qu’ingénieur en automation et systèmes embarqués. Passionné
+                par ces domaines, je suis actuellement à la recherche d’un poste qui me permettra de mettre en pratique
+                les compétences et connaissances acquises au cours de mes cinq années d’études. Motivé, curieux et
+                rigoureux, je suis prêt à relever de nouveaux défis et à contribuer activement à des projets innovants.
             </p>
-
         </div>
 
         <div class="visit_right">
@@ -163,13 +161,30 @@
 
             <div class="various_block">
                 <h3 style="margin-bottom: 25px; font-size: 22px">Compétences</h3>
+                <h4 style="margin-top: 0; margin-bottom: 10px; font-size: 18px;">Compétences non techniques</h4>
                 <ul class="enum">
                     <li>Ponctuel</li>
                     <li>Travail d'équipe</li>
                     <li>Organisé</li>
                     <li>Persévérant</li>
-                    <li>Informatique (Word, PowerPoint, Excel (VBA), Visual Studio, Visual Studio Code, C/C++, C#
-                        (.NET), HTML/CSS, SQL, Python, Fusion 360, etc.)</li>
+                    <li>Autonome</li>
+                </ul>
+
+                <h4 style="margin-top: 30px; margin-bottom: 10px; font-size: 18px;">Compétences techniques</h4>
+                <ul class="enum">
+                    <li>Word</li>
+                    <li>PowerPoint</li>
+                    <li>Excel (VBA)</li>
+                    <li>Visual Studio</li>
+                    <li>Visual Studio Code</li>
+                    <li>C / C++</li>
+                    <li>C# (.NET)</li>
+                    <li>HTML / CSS</li>
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>Fusion 360</li>
+                    <li>Electronique (soudure, PCB, etc.)</li>
+                    <li>Programmation d'automates industriels avec TIA Portal (Siemens)</li>
                 </ul>
             </div>
 
@@ -209,13 +224,14 @@
             </div>
 
             <div class="footer_right">
-                <p style="font-weight: bold;">&copy<span id="year"></span> Descamps Luc. Tous droits réservés.</p>
+                <p style="font-weight: bold;">&copy; <span id="year"></span> Luc Descamps</p>
             </div>
 
         </div>
     </footer>
 
     <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
         document.addEventListener("DOMContentLoaded", function () {
             const dropBtn = document.querySelector(".dropbtn");
             const dropContent = document.querySelector(".dropdown-content");
