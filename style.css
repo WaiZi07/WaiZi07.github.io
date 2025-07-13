@@ -94,6 +94,15 @@ a:hover {
     .image {
         max-height: 200px;
     }
+
+    .visit_left {
+        text-align: center !important;
+    }
+
+    .practice_tasks,
+    .enum {
+        text-align: left !important;
+    }
 }
 
 @media (min-width: 600px) {
