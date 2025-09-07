@@ -80,6 +80,29 @@ a:hover {
     display: block;
 }
 
+.lang-switch {
+    position: absolute;
+    top: 50%;
+    color: white;
+    right: 20px;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.lang-switch a {
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.lang-switch a:hover {
+    background: #f2ac33;
+    color: #010b0e;
+}
+
 .image {
     width: 100%;
     height: auto;
@@ -144,6 +167,10 @@ a:hover {
 
     .dropbtn {
         font-size: 35px;
+    }
+
+    .lang-switch {
+        font-size: 18px;
     }
 
     .image {
